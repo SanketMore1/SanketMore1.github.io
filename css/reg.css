@@ -21,3 +21,12 @@ h3{
   table.inner{
     border: 0px
   }
+  /* Orange */
+.warning {
+  color: orange;
+}
+
+.warning:hover {
+  background: #ff9800;
+  color: white;
+}
