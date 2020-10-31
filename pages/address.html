@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: center;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Address details</h2>
+
+<form class="form-inline" action="/action_page.php">
+ 
+ <label for="fna">Flat No & Apartment:</label>
+  <input type="text" id="FNA" placeholder="Enter no and apartment" name="FNA">
+ 
+  <label for="Cn">Colony </label>
+  <input type="text" id="CN" placeholder="Enter colony name" name="CN">
+ 
+ 
+ 
+ <label for="Ct">City Name </label>
+  <input type="text" id="CT" placeholder="Enter City name" name="CT">
+ 
+ 
+ <label for="Th">Tehsil Name </label>
+  <input type="text" id="Th" placeholder="Enter Tehsil name" name="Th">
+ 
+ 
+  <label for="Ds">District Name </label>
+  <input type="text" id="Ds" placeholder="Enter District name" name="Ds">
+ 
+  <label for="St">State Name </label>
+  <input type="text" id="St" placeholder="Enter State name" name="St">
+ 
+  <label for="Cn">Country Name </label>
+  <input type="text" id="Cn" placeholder="India" name="Cn">
+ 
+ 
+ <label for="Pc">Pin Code </label>
+  <input type="number" id="Pc" placeholder="Enter Pincode" name="Pc">
+ 
+  <button type="reset">Reset</button>
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: center;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Inline Form</h2>
+<p>We have created an inline form that will stay horizontal until the screen width of the browser window is less than 850 pixels: then the form is displayed vertically instead of horizontally.</p>
+<p>Resize the browser window to see the effect.</p>
+
+<form class="form-inline" action="/action_page.php">
+  <label for="fn">First Name:</label>
+  <input type="text" id="FN" placeholder="Enter first name" name="FN">
+ 
+  <label for="Mn">Middle Name </label>
+  <input type="text" id="MN" placeholder="Enter Middle name" name="MN">
+ 
+ 
+ 
+ <label for="ln">Last Name </label>
+  <input type="text" id="LN" placeholder="Enter last name" name="LN">
+ 
+  <label for="dob">Date of birth</label>
+  <input type="calender" id="Dob" placeholder="Enter in DD-MM-YYYY" name="Dob">
+ 
+  <label for="phone no">Phone No :</label>
+  <input type="tel" id="Pn" placeholder="Enter phone no" name="Pn">
+ 
+ 
+ 
+ <label for="email">Email:</label>
+  <input type="email" id="email" placeholder="Enter email" name="email">
+ 
+
+ <label for="img">Select image:</label>
+  <input type="file" id="img" name="img" accept="image/*">
+
+
+ <legend> gender:  </legend>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+<br>
+
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Two Column Layout</h2>
+<p>Resize the browser window to see the responsive effect (the columns will stack on top of each other instead of floating next to each other, when the screen is less than 600px wide).</p>
+
+<div class="row">
+  <div class="column" style="background-color:#FFFFFFF;">
+   
+   
+   
+   <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: center;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Personal Details</h2>
+<p></p>
+<p>Resize the browser window to see the effect.</p>
+
+<form class="form-inline" action="/action_page.php">
+  <label for="fn">First Name:</label>
+  <input type="text" id="FN" placeholder="Enter first name" name="FN">
+ 
+  <label for="Mn">Middle Name </label>
+  <input type="text" id="MN" placeholder="Enter Middle name" name="MN">
+ 
+ 
+ 
+ <label for="ln">Last Name </label>
+  <input type="text" id="LN" placeholder="Enter last name" name="LN">
+ 
+  <label for="dob">Date of birth</label>
+  <input type="calender" id="Dob" placeholder="Enter in DD-MM-YYYY" name="Dob">
+ 
+  <label for="phone no">Phone No :</label>
+  <input type="tel" id="Pn" placeholder="Enter phone no" name="Pn">
+ 
+ 
+ 
+ <label for="email">Email:</label>
+  <input type="email" id="email" placeholder="Enter email" name="email">
+ 
+
+ <label for="img">Upload Photo:</label>
+  <input type="file" id="img" name="img" accept="image/*">
+
+
+ <legend> gender:  </legend>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+<br>
+
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
+
+   
+ 
+  </div>
+  <div class="column" style="background-color:#FFFFFFF;">
+   <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: center;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Address Details </h2>
+<p>.</p>
+<p>Resize the browser window to see the effect.</p>
+
+<form class="form-inline" action="/action_page.php">
+ 
+ <label for="fna">Flat No & Apartment:</label>
+  <input type="text" id="FNA" placeholder="Enter no and apartment" name="FNA">
+ 
+  <label for="Cn">Colony </label>
+  <input type="text" id="CN" placeholder="Enter colony name" name="CN">
+ 
+ 
+ 
+ <label for="Ct">City Name </label>
+  <input type="text" id="CT" placeholder="Enter City name" name="CT">
+ 
+ 
+ <label for="Th">Tehsil Name </label>
+  <input type="text" id="Th" placeholder="Enter Tehsil name" name="Th">
+ 
+ 
+  <label for="Ds">District Name </label>
+  <input type="text" id="Ds" placeholder="Enter District name" name="Ds">
+ 
+  <label for="St">State Name </label>
+  <input type="text" id="St" placeholder="Enter State name" name="St">
+ 
+  <label for="Cn">Country Name </label>
+  <input type="text" id="Cn" placeholder="India" name="Cn">
+ 
+ 
+ <label for="Pc">Pin Code </label>
+  <input type="number" id="Pc" placeholder="Enter Pincode" name="Pc">
+ 
+  <button type="reset">Reset</button>
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
+
+  
+  </div>
+</div>
+
+</body>
+</html>
